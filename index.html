@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tari Osadebe Portfolio</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; /* Remove default margin */
+            padding: 20px; /* Added padding for mobile spacing */
+            background-color: #f4f4f4; /* Light gray background */
+        }
+        h1 { 
+            color: #333; 
+            text-align: center; /* Center align header */
+        }
+        .profile-pic {
+            border-radius: 20%; /* Makes the image rounded */
+            width: 100%; /* Full width for responsiveness */
+            max-width: 500px; /* Limit maximum width */
+            height: auto; /* Auto height to maintain aspect ratio */
+            display: block;
+            margin: 0 auto 20px; /* Centers the image */
+        }
+        .projects-container {
+            display: flex; /* Use flexbox for layout */
+            flex-direction: column; /* Stack sections on mobile */
+            margin-top: 20px; /* Space between the text and projects */
+        }
+        @media (min-width: 768px) {
+            .projects-container {
+                flex-direction: row; /* Side by side on larger screens */
+            }
+        }
+        .projects { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+            gap: 20px; 
+        }
+        .project { 
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            border-radius: 8px; 
+            background-color: white; /* White background for project boxes */
+        }
+        .section { 
+            width: 100%; /* Full width for sections on mobile */
+            margin-bottom: 20px; /* Space between sections */
+        }
+        @media (min-width: 768px) {
+            .section { 
+                width: 48%; /* Adjust the width of each section on larger screens */
+                margin-bottom: 0; /* Remove bottom margin for larger screens */
+            }
+        }
+        h2 { color: #121111; }
+        .cv-section { margin-top: 40px; text-align: center; }
+        .social-media { margin-top: 40px; text-align: center; }
+        .social-media a {
+            margin-right: 15px;
+            text-decoration: none; /* Remove underline */
+            transition: transform 0.3s; /* Smooth transition for hover */
+        }
+        .social-media a:hover {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+        footer { 
+            margin-top: 40px; 
+            padding: 20px; 
+            text-align: center; 
+            background-color: #434141; /* Dark background for the footer */
+            color: white; /* White text for contrast */
+            border-radius: 2px; /* Rounded corners */
+        }
+        footer .social-icons {
+            margin-top: 10px; /* Space between text and icons */
+        }
+        .icon {
+            width: 24px; /* Icon size */
+            height: 24px; /* Icon size */
+            vertical-align: middle; /* Align with text */
+            margin-right: 8px; /* Space between icons */
+        }
+    </style>
+</head>
+<body>
+    <img src="tari-profile.jpg" alt="Profile Picture" class="profile-pic">
+    <h1>Tari Osadebe Portfolio</h1>
+    <p><small>Hello and welcome to my portfolio, I'm elated to share my journey as a developer with you. Beyond merely coding, I am fervently passionate about my work, embracing every challenge that comes my way. My zeal for crafting impactful solutions drives me to excel in the Microsoft technology stack, particularly with <strong>C#</strong> and <strong>ASP.NET</strong>. Additionally, I engage with modern frameworks like <strong>Node.js</strong> and <strong>React</strong> to devise efficient and scalable software solutions that cater to a diverse array of needs. I eagerly anticipate showcasing my projects and the innovative solutions I've developed. On the backend, I use <strong>C#</strong> and <strong>.NET</strong> to build reliable applications, and I develop APIs with <strong>Node.js</strong> and <strong>TypeScript</strong> for enhanced performance. On the frontend, I leverage <strong>HTML5</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong> to create engaging user experiences. I excel in addressing complex technical challenges and prioritize writing clean, maintainable code. Continuous learning and staying current with tech trends are vital to my approach, and I thrive in collaborative environments. Explore my projects, and I hope you find something that interests you.</small></p>
+
+    <div class="projects-container">
+        <div class="section">
+            <h2>Backend Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>BankAppAPI (C# .NET)</h3>
+                    <p>Savings Goals and Planning</p>
+                    <a href="https://github.com/blacktari/BankAppAPI" target="_blank">GitHub Repo</a>
+                </div>
+                <div class="project">
+                    <h3>ExpressAPI (Node.js/Express)</h3>
+                    <p>Create, Read, Update, Delete</p>
+                    <a href="https://github.com/blacktari/ExpressAPI" target="_blank">GitHub Repo</a>
+                </div>
+                <div class="project">
+                    <h3>Project 3</h3>
+                    <p>Description of Project 3...</p>
+                    <a href="https://github.com/username/project3" target="_blank">GitHub Repo</a>
+                </div>
+                <div class="project">
+                    <h3>Project 4</h3>
+                    <p>Description of Project 4...</p>
+                    <a href="https://github.com/username/project4" target="_blank">GitHub Repo</a>
+                </div>
+                <div class="project">
+                    <h3>Project 5</h3>
+                    <p>Description of Project 5...</p>
+                    <a href="https://github.com/username/project5" target="_blank">GitHub Repo</a>
+                </div>
+                <div class="project">
+                    <h3>Project 6</h3>
+                    <p>Description of Project 6...</p>
+                    <a href="https://github.com/username/project6" target="_blank">GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Frontend Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>dibatech-landing-page
+                    </h3>
+                    <p>DibaTech 'Coming Soon' landing page</p>
+                    <a href="https://github.com/dibatech-ng/dibatech-landing-page" target="_blank">GitHub Repo</a>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2...</p>
+                    <a href="https://github.com/username/project2" target="_blank">GitHub Repo</a>
+                </div>
+                <div class="project">
+                    <h3>Project 3</h3>
+                    <p>Description of Project 3...</p>
+                    <a href="https://github.com/username/project3" target="_blank">GitHub Repo</a>
+                </div>
+                <div class="project">
+                    <h3>Project 4</h3>
+                    <p>Description of Project 4...</p>
+                    <a href="https://github.com/username/project4" target="_blank">GitHub Repo</a>
+                </div>
+                <div class="project">
+                    <h3>Project 5</h3>
+                    <p>Description of Project 5...</p>
+                    <a href="https://github.com/username/project5" target="_blank">GitHub Repo</a>
+                </div>
+                <div class="project">
+                    <h3>Project 6</h3>
+                    <p>Description of Project 6...</p>
+                    <a href="https://github.com/username/project6" target="_blank">GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cv-section">
+        <h2>Download My CV</h2>
+        <p>Feel free to download my CV for more details about my work and experience.</p>
+        <a href="path/to/your-cv.pdf" target="_blank">Download CV</a> <!-- Update with your CV path -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tari Osadebe. All Rights Reserved.</p>
+        <p>Email: <a href="mailto:osadebeendurance@gmail.com" style="color: white;">osadebeendurance@gmail.com</a></p> <!-- Update with your email -->
+        <div class="social-media">
+            <h2>Connect with Me</h2>
+            <p>You can find me on:</p>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/your-linkedin" target="_blank">
+                    <img src="https://img.icons8.com/color/50/000000/linkedin.png" class="icon" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/your-github" target="_blank">
+                    <img src="https://img.icons8.com/color/50/000000/github.png" class="icon" alt="GitHub">
+                </a>
+                <a href="https://twitter.com/your-twitter" target="_blank">
+                    <img src="https://img.icons8.com/color/50/000000/twitter.png" class="icon" alt="Twitter">
+                </a>
+                <a href="https://facebook.com/your-facebook" target="_blank">
+                    <img src="https://img.icons8.com/color/50/000000/facebook.png" class="icon" alt="Facebook">
+                </a>
+                <a href="https://instagram.com/your-instagram" target="_blank">
+                    <img src="https://img.icons8.com/color/50/000000/instagram-new.png" class="icon" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
